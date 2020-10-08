@@ -7,7 +7,7 @@ using namespace std;
 
 
 enum DegreeProgram { NETWORK, SECURITY, SOFTWARE };
-static const string degreeprogstrings[] = { "NETWORK, SECURITY, SOFTWARE " };
+static const string degreeprogstrings[] = { "NETWORK", "SECURITY", "SOFTWARE" };
 
 
 
