@@ -28,10 +28,21 @@ int main() {
 	cout << "INVALID EMAILS SHOWN BELOW: " << endl;
 
 	classRoster.printInvalidEmails();
+	cout << endl;
 
-	cout << " CURRENT STUDENT'S AVERAGE COURSE DAYS:  " << endl;
-	classRoster.printAvgDaysInCourse("A5");
+
+
+	////loop through classRosterArray and for each element:
+	cout << " SHOWING AVERAGE COURSE DAYS FOR ALL STUDENTS:  " << endl;
+	classRoster.printAvgDaysInCourse();
+	cout << endl;
 	
+
+	
+	classRoster.remove("A3");
+
+	classRoster.printAll();
+
 	classRoster.remove("A3");
 
 
