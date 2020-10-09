@@ -20,7 +20,7 @@ int main() { //OBJECTIVE F. create a main function.
 
 	/*Print out to the screen, 
 	via your application, the course title, the programming language used, your WGU student ID, and your name.*/
-	cout << "---------Scripting and Programming - Applications – C867---------------" << endl;
+	cout << "---------Scripting and Programming - Applications -C867---------------" << endl;
 	cout << "-----------------------MADE WITH C++ BY SIKAROS -------------------" << endl;
 	cout << "--------------------STUDENT ID:  99999999 ---------------------------" << endl << endl;;
 
