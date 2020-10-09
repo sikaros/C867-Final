@@ -4,7 +4,7 @@
 using namespace std;
 
 
-
+// OBJECTIVE E CREATE ROSTER
 class Roster
 {
 
@@ -27,7 +27,7 @@ public:
 
 	void printAll();
 	void printByDegreeProgram(DegreeProgram degreeprogram);
-	void printAvgDaysInCourse(string studentID);
+	void printAvgDaysInCourse( string studentID); // prints a student’s average number of days in the three courses. The student is identified by the studentID parameter.
 	void remove(string studentID); //find and remove student by student ID.
 	void printInvalidEmails(); /* A	valid email should include an at sign ('@') and period ('.') and should not include a space (' ').*/
 
