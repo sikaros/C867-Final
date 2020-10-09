@@ -11,6 +11,9 @@ Student ID: 000485711
 B.S. Data Management/Analytics
 */
 
+/*  OBJECTIVE C.  Define an enumerated data type DegreeProgram for
+the degree programs containing the data type values SECURITY, NETWORK, and SOFTWARE. */
+
 
 enum DegreeProgram { NETWORK, SECURITY, SOFTWARE };
 static const string degreeprogstrings[] = { "NETWORK", "SECURITY", "SOFTWARE" };
