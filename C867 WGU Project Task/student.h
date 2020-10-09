@@ -3,11 +3,11 @@
 using namespace std;
 
 
-class Student {  
+class Student {
 
-	 
+
 public:
-	
+
 
 	Student();
 	Student(string studID,
@@ -17,11 +17,11 @@ public:
 		int studAge,
 		int daysIncourse[],
 		DegreeProgram degreeProgram);
-	~Student();  
+	~Student();
 
 
 
-	
+
 	string getStudID();
 	string getStudfName();
 	string getStudlName();
@@ -31,7 +31,7 @@ public:
 	DegreeProgram getDegreeProgram();
 
 
-	
+
 	void setStudID(string studID);
 	void setStudFName(string fName);
 	void setStudLName(string lName);
@@ -41,11 +41,11 @@ public:
 	void setDegreeProgram(DegreeProgram degreeProgram);
 
 
-	static void printHeader(); 
-	void print(); 
+	static void printHeader();
+	void print();
 
 	const static int numDays = 3;
-	
+
 private:
 
 
@@ -55,8 +55,7 @@ private:
 	string studEmail;
 	int studAge;
 	int daysIncourse[numDays];
-	DegreeProgram degreeprogram; 
-	
+	DegreeProgram degreeprogram;
+
 
 };
-
