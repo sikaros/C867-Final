@@ -109,15 +109,16 @@ void Roster::printInvalidEmails() { //Function prints invalid emails
 
 
 
-void Roster::printAvgDaysInCourse() {
+void Roster::printAvgDaysInCourse(string studentID) {
 
 	for (int i = 0; i <= lastIndex; ++i) {
-		cout << classRosterArray[i]->getStudID() << ":   ";
-		cout << (classRosterArray[i]->getdaysIncourse()[0] + classRosterArray[i]->getdaysIncourse()[1]
-			+ classRosterArray[i]->getdaysIncourse()[2]) / 3.0 << endl;
+		if (classRosterArray[i]->getStudID() == studentID) {
+			cout << studentID << ": ";
+			cout << (classRosterArray[i]->getdaysIncourse()[0] + classRosterArray[i]->getdaysIncourse()[1]
+				+ classRosterArray[i]->getdaysIncourse()[2]) / 3.0 << endl;
+		}
 	}
 }
-
 
 			
 
