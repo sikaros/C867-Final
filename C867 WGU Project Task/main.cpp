@@ -1,6 +1,6 @@
 #include "roster.h"
-// Scripting and Programming - Applications – C867 Final Task
-//by Oscar A.
+
+
 int main() {
 	const string studentData[] =
 
@@ -13,31 +13,30 @@ int main() {
 	const int numStudents = 5;
 	Roster classRoster;
 
+
+	/*Print out to the screen, 
+	via your application, the course title, the programming language used, your WGU student ID, and your name.*/
+	cout << "---------Scripting and Programming - Applications â€“ C867---------------" << endl;
+	cout << "-----------------------MADE WITH C++ BY OSCAR AYALA -------------------" << endl;
+	cout << "--------------------STUDENT ID:  000485711 ---------------------------" << endl << endl;;
+
 	for (int i = 0; i < numStudents; i++)classRoster.parseData(studentData[i]);
-	cout << "Diplaying all students: " << endl;
+	cout << "CURRENT STUDENT ROSTER:  " << endl;
 	classRoster.printAll();
-	cout << endl;
+	cout << endl << endl;
+	
+	cout << "INVALID EMAILS SHOWN BELOW: " << endl;
 
-
-	for (int i = 0; i < 3; i++) {
-
-		cout << "Displaying by Degree program: " << degreeprogstrings[i] << endl;
-		classRoster.printByDegreeProgram((DegreeProgram)i); //cast to Degree Program Enum TYPE
-
-	}
-
-	cout << "Displaying with Invalid Emails" << endl;
 	classRoster.printInvalidEmails();
-	cout << endl;
 
-	cout << "Displaying avergrage prices: " << endl;
-
-	cout << "Removing book with ID :" << endl;
+	cout << " CURRENT STUDENT'S AVERAGE COURSE DAYS:  " << endl;
+	classRoster.printAvgDaysInCourse("A5");
+	
 	classRoster.remove("A3");
-	cout << endl;
+
 
 	system("pause");
+
 	return 0;
+
 }
-
-
