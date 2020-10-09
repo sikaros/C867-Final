@@ -109,28 +109,25 @@ void Roster::printInvalidEmails() { //Function prints invalid emails
 
 
 
-	void Roster::printAvgDaysInCourse(string studentID) {
+void Roster::printAvgDaysInCourse() {
 
-		for (int i = 0; i <= lastIndex; ++i) {
-			if (classRosterArray[i]->getStudID() == studentID) {
-
-				cout << studentID << ":";
-				cout << (classRosterArray[i]->getdaysIncourse()[0] + classRosterArray[i]->getdaysIncourse()[1]
-					+ classRosterArray[i]->getdaysIncourse()[2]) / 3.0 << endl;
-
-			}
-
-		}
+	for (int i = 0; i <= lastIndex; ++i) {
+		cout << classRosterArray[i]->getStudID() << ":   ";
+		cout << (classRosterArray[i]->getdaysIncourse()[0] + classRosterArray[i]->getdaysIncourse()[1]
+			+ classRosterArray[i]->getdaysIncourse()[2]) / 3.0 << endl;
+	}
 }
+
+
+			
 
 void Roster::remove(string studentID) {// removes student by student ID
 	bool found = false;
-	for (int i = 0; i <= Roster::lastIndex; i++)
-	{
+	for (int i = 0; i <= Roster::lastIndex; i++) {
 
 		if (classRosterArray[i]->getStudID() == studentID) {
 
-			found = true; //found ID
+			found = true;
 			if (i < numStudents - 1) {
 
 				Student* tempvar = classRosterArray[i]; //swap method, moving pointer
@@ -140,17 +137,18 @@ void Roster::remove(string studentID) {// removes student by student ID
 			}
 			Roster::lastIndex--;
 		}
+	}
 
 		if (found) {
 
-			cout << studentID << ":  Removed from Roster." << endl << endl;
+			cout << studentID << ": Removed from Roster." << endl << endl;
 			this->printAll();
 		}
 		else {
-			cout << studentID << " not found." << endl << endl;
+			cout << studentID << " ID NOT FOUND " << endl << endl;
 		}
 	}
-}
+
 
 
 Roster::~Roster() {
