@@ -6,8 +6,8 @@ using namespace std;
 
 /* JYM1 — JYM1 TASK 1: CLASS ROSTER
 SCRIPTING AND PROGRAMMING - APPLICATIONS — C867
-STUDENT : OSCAR AYALA -10/2020
-Student ID: 000485711
+STUDENT : 
+Student ID:
 B.S. Data Management/Analytics
 */
 
